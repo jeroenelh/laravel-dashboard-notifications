@@ -14,7 +14,8 @@ return new class extends Migration {
             $table->integerIncrements('id');
             $table->string('module');
             $table->string('name');
-            $table->set('type', ['string', 'bool', 'integer']);
+            $table->set('type', ['string', 'bool', 'integer', 'model']);
+            $table->string('model');
             $table->timestamps();
         });
 

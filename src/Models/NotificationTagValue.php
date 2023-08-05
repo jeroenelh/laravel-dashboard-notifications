@@ -15,7 +15,7 @@ use Illuminate\Database\Query\Builder;
  */
 class NotificationTagValue extends Model
 {
-    protected $table = 'notification_tags';
+    protected $table = 'notification_tag_values';
 
     protected $dateFormat = 'Y-m-d H:i:s';
 

@@ -10,6 +10,7 @@ use Illuminate\Database\Query\Builder;
  * @property string $module
  * @property string $name
  * @property string $type
+ * @property string $model
  * @method static NotificationTag create(array $array)
  * @method static Builder where(string $string, mixed $name)
  */
@@ -23,5 +24,6 @@ class NotificationTag extends Model
         'module',
         'name',
         'type',
+        'model',
     ];
 }
