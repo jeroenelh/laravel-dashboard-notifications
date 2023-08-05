@@ -6,7 +6,7 @@ use Microit\DashboardNotifications\Models\NotificationTag;
 
 class NotificationTagValue
 {
-    protected ?NotificationTag $model = null;
+    public ?NotificationTag $model = null;
 
     public function __construct(public readonly string $module, public readonly string $name, public readonly string $value)
     {
