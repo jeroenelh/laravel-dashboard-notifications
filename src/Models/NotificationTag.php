@@ -7,6 +7,7 @@ use Illuminate\Database\Query\Builder;
 
 /**
  * @property int $id
+ * @property string $module
  * @property string $name
  * @property string $type
  * @method static NotificationTag create(array $array)
@@ -19,6 +20,7 @@ class NotificationTag extends Model
     protected $dateFormat = 'Y-m-d H:i:s';
 
     protected $fillable = [
+        'module',
         'name',
         'type',
     ];

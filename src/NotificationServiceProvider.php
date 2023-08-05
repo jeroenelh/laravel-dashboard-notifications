@@ -13,5 +13,8 @@ class NotificationServiceProvider extends ServiceProvider
 
     public function register(): void
     {
+        $this->app->singleton(NotificationTagProvider::class, function () {
+            return new NotificationTagProvider();
+        });
     }
 }

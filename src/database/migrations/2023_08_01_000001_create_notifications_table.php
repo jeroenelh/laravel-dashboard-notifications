@@ -12,6 +12,7 @@ return new class extends Migration {
     {
         Schema::create('notification_tags', function (Blueprint $table) {
             $table->integerIncrements('id');
+            $table->string('module');
             $table->string('name');
             $table->set('type', ['string', 'bool', 'integer']);
             $table->timestamps();
