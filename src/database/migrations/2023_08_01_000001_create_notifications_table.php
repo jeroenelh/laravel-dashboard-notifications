@@ -24,6 +24,7 @@ return new class extends Migration {
             $table->foreignIdFor(\Microit\DashboardNotifications\Models\NotificationTag::class, 'tag_id');
             $table->foreignIdFor(\Microit\DashboardNotifications\Models\Notification::class, 'notification_id');
             $table->string('value');
+            $table->string('model_source')->nullable();
             $table->timestamps();
         });
 

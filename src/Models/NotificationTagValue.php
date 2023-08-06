@@ -23,5 +23,6 @@ class NotificationTagValue extends Model
         'tag_id',
         'notification_id',
         'value',
+        'model_source',
     ];
 }
